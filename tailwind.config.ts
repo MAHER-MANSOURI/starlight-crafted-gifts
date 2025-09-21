@@ -57,6 +57,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Premium custom colors
+        wood: {
+          light: "hsl(var(--wood-light))",
+          medium: "hsl(var(--wood-medium))",
+          dark: "hsl(var(--wood-dark))",
+        },
+        glow: {
+          warm: "hsl(var(--glow-warm))",
+          soft: "hsl(var(--glow-soft))",
+        },
+        premium: {
+          gold: "hsl(var(--premium-gold))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
