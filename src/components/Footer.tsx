@@ -1,4 +1,5 @@
 import { Heart, Instagram, Facebook, Mail } from "lucide-react";
+import ghamzaLogo from "@/assets/ghamza-logo.png";
 
 export default function Footer() {
   return (
@@ -7,14 +8,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg warm-gradient flex items-center justify-center">
-                <Heart className="h-5 w-5 text-accent-foreground" />
-              </div>
-              <span className="text-2xl font-bold text-premium">Tamuz</span>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={ghamzaLogo} 
+                alt="GHAMZA Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-muted-foreground">
-              Uniquement pour toi - Handcrafted wooden light boxes that illuminate your most precious memories.
+              <span className="text-primary font-medium">A personal wink between two people.</span><br/>
+              Handcrafted wooden light boxes that illuminate your most precious memories.
             </p>
           </div>
 
@@ -64,7 +67,7 @@ export default function Footer() {
 
         <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Tamuz Light Boxes. All rights reserved.
+            © 2024 GHAMZA Light Boxes. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
             Made with <Heart className="inline h-4 w-4 text-primary mx-1" /> for your special moments

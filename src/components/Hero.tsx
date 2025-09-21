@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Star, Gamepad2 } from "lucide-react";
 import heroLightbox from "@/assets/hero-lightbox.jpg";
+import ghamzaLogo from "@/assets/ghamza-logo.png";
 
 export default function Hero() {
   return (
@@ -15,6 +16,15 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Content */}
           <div className="text-center lg:text-left space-y-8">
+            {/* Brand Logo */}
+            <div className="flex justify-center lg:justify-start mb-6">
+              <img 
+                src={ghamzaLogo} 
+                alt="GHAMZA - A personal wink between two people"
+                className="h-16 w-auto smooth-transition hover:scale-105"
+              />
+            </div>
+            
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="text-premium">Illuminate</span>
@@ -25,6 +35,7 @@ export default function Hero() {
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl">
+                <span className="text-primary font-medium">A personal wink between two people.</span><br/>
                 Handcrafted wooden light boxes featuring customizable artworks and personalized star maps. 
                 Perfect gifts for every special moment.
               </p>
