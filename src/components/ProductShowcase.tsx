@@ -53,7 +53,7 @@ const products = [
 
 export default function ProductShowcase() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-gradient-to-b from-background via-background to-card/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
